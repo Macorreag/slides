@@ -5,11 +5,12 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+  <!-- load html on div -->
+  <script src="https://www.w3schools.com/lib/w3data.js"></script>
   <title>Hello, world!</title>
 </head>
 
@@ -21,68 +22,18 @@
   <div class="container-fluid px-0">
     <div id="carouselExampleControls" class="carousel slide" data-interval="false">
       <div class="carousel-inner bg-info" role="listbox">
-        <div class="carousel-item">
-            <div class="d-flex align-items-center justify-content-center min-vh-100">
-                <div class="row">
-                    <div class="col">col</div>
-                    <div class="col">col</div>
-                    <div class="w-100"></div>
-                    <div class="col">col</div>
-                    <div class="col">col</div>
-                  </div>
+
+        <div class="carousel-item" >
+          <div class="d-flex align-items-center justify-content-center min-vh-100">
+              <div w3-include-html="./slides/one.html" ></div>                
             </div>
           </div>
+
+
         <div class="carousel-item active">
           <div class="d-flex align-items-center justify-content-center min-vh-100">
 
-            <div class=" container-fluid p-0">
-              <div class="row">
-                <div class="col-8 col-sm-8 p-0">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-sm p-0 pt-xl-5 pb-xl-5">
-                        <img src="https://i.imgur.com/0CKszcj.jpg?1" data-toggle="tooltip" data-placement="right"
-                          title="Uno de mis hermanos consume marihuana y no trabaja. Esto ha afectado la relación con mi familia y solo hablamos para discutir por él.​
-                                Decidí trabajar medio tiempo para tener mi propio dinero y hacer otras actividades. Además le sugerí a mi mamá que fuéramos a terapia familiar.">
-                      </div>
-                      <div class="col-sm p-0 pt-xl-5 pb-xl-5">
-                          <img src="https://i.imgur.com/0CKszcj.jpg?1" data-toggle="tooltip" data-placement="right"
-                          title="Uno de mis hermanos consume marihuana y no trabaja. Esto ha afectado la relación con mi familia y solo hablamos para discutir por él.​
-                                Decidí trabajar medio tiempo para tener mi propio dinero y hacer otras actividades. Además le sugerí a mi mamá que fuéramos a terapia familiar.">
-                      
-                      </div>
-                      <div class="col-sm p-0 pt-xl-5 pb-xl-5">
-                          <img src="https://i.imgur.com/0CKszcj.jpg?1" data-toggle="tooltip" data-placement="left"
-                          title="Uno de mis hermanos consume marihuana y no trabaja. Esto ha afectado la relación con mi familia y solo hablamos para discutir por él.​
-                                Decidí trabajar medio tiempo para tener mi propio dinero y hacer otras actividades. Además le sugerí a mi mamá que fuéramos a terapia familiar.">
-                      
-                        
-                      </div>
-                    </div>
-                  </div>
-
-
-
-                </div>
-                <div class="col-4 col-sm-4 text-center p-0" style="background-image: url(https://i.imgur.com/d1YYrPE.jpg); background-size: cover;">
-
-                  <img src="https://i.imgur.com/TMlF1Qn.jpg" class="img-fluid" alt="Responsive image">
-                  <div class="">
-                    <h1>Ellos/as pusieron en práctica las siguientes</h1>
-                    <br>
-                    <a  href="#carouselExampleControls" role="button" data-slide="next">
-                      ESTRATEGIAS
-                    </a>
-                    <a  href="#carouselExampleControls" role="button" data-slide="prev">
-                        Atras
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-
-
-            </div>
+              <div w3-include-html="./slides/two.html" ></div>   
           </div>
         </div>
 
@@ -102,6 +53,7 @@
 
 
   <!-- Optional JavaScript -->
+
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -112,20 +64,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-
-
-
-  <script>
-
-    $(document).ready(function () {
-      $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-      })
-
-    });
-  </script>
-
+  <script type = "text/javascript" src="js/index.js"></script>
 
 </body>
-
 </html>
